@@ -3,12 +3,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import type { NavItem } from '../lib/data';
 
-// 1. Define type-safe interface for navigation links
-interface NavItem {
-  label: string;
-  href: string;
-}
+
 
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
@@ -31,7 +28,7 @@ export default function Navbar(): React.JSX.Element {
         <div className="flex justify-between h-16 items-center">
           
           {/* Logo Section */}
-          <div className="flex-shrink-0 flex items-center">
+          <div className="shrink-0 flex items-center">
             <Link href="/" className="text-xl font-bold text-blue-600">
               MyBrand
             </Link>
