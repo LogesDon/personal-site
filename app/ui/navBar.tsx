@@ -9,9 +9,7 @@ import type { NavItem } from '../lib/data';
 
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Blog', href: '/bloggy'} // will change to /blog once I get blog page up and running
 ];
 
 export default function Navbar(): React.JSX.Element {
@@ -30,7 +28,7 @@ export default function Navbar(): React.JSX.Element {
           {/* Logo Section */}
           <div className="shrink-0 flex items-center">
             <Link href="/" className="text-xl font-bold text-blue-600">
-              MyBrand
+              Logan Donnelly
             </Link>
           </div>
 
