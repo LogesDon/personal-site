@@ -7,9 +7,9 @@ export default function Home() {
       <BioCard />
       <Image 
         src="/logan-photo.jpg"
-        width={1000}
-        height={760}
-        className="hidden md:block"
+        width={440}
+        height={440}
+        className="hidden md:block rounded-b-3xl pt-80"
         alt="Image of Myself to go alongside bio"/>
     </div>
   );
