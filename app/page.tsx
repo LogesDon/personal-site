@@ -3,14 +3,24 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="flex gap-4">
-      <BioCard />
-      <Image 
-        src="/logan-photo.jpg"
-        width={440}
-        height={440}
-        className="hidden md:block rounded-b-3xl pt-80"
-        alt="Image of Myself to go alongside bio"/>
+      <div className="flex items-start justify-between w-full px-8 pt-45 md:px-16 max-w-7xl mx-auto gap-16">
+      {/* Column 1: Takes up 60% of the wide container */}
+      <div className="w-full md:w-3/5">
+        <BioCard />
+      </div>
+
+      {/* Column 2: Takes up 40% of the container */}
+      <div className="w-full md:w-2/5 flex justify-end">
+        <Image 
+            src="/logan-photo.jpg"
+            width={480}
+            height={480}
+            className="w-full h-auto rounded-3xl object-cover max-w-120"
+            alt="Image of Myself to go alongside bio"
+            priority
+        />
+      </div>
     </div>
+
   );
 }
