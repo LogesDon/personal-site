@@ -4,6 +4,7 @@ export default function FeaturedWork() {
 
     return (
         <>
+            {/* Heading Section for featured work projects */}
             <h1 className={`${lusitana.className} text-3xl text-gray-900 md:text-5xl font-bold tracking-tight md:leading-[1.1]`}>
                 Featured Work
             </h1>
