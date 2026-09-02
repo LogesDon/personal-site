@@ -9,7 +9,7 @@ import type { NavItem } from '../lib/data';
 
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Blog', href: '/bloggy'} // will change to /blog once I get blog page up and running
+  { label: 'Blog', href: '/blog'}
 ];
 
 export default function Navbar(): React.JSX.Element {
