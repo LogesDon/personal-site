@@ -1,6 +1,7 @@
 // app/blog/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import { posts } from "@/app/lib/posts";
+import ReactMarkdown from "react-markdown";
 
 // 1. Declare the component as async, and wrap params in a Promise type
 export default async function BlogPostPage({ 
@@ -25,7 +26,7 @@ export default async function BlogPostPage({
       <h1 className="text-4xl font-bold mt-2 mb-4">{post.title}</h1>
       <h2 className="text-gray-500 mb-8">{post.date}</h2>
       <div className="prose text-lg">
-        <p>{post.content}</p>
+        <ReactMarkdown>{post.content}</ReactMarkdown>
       </div>
     </article>
   );
