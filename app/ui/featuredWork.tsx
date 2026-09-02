@@ -1,7 +1,6 @@
 import { lusitana } from '@/app/ui/fonts'
 import ProjectCard from './projectCard';
-import taskList from '@/public/task-list-template.jpg'
-import gitProject from '@/public/git-project.png'
+import { projects } from '../lib/projects';
 
 export default function FeaturedWork() {
 
@@ -17,18 +16,11 @@ export default function FeaturedWork() {
             </p>
             {/* Section for project cards, uses grid for responsive Grid layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-44 mt-8">
-                <ProjectCard 
-                    imageSrc={taskList}
-                    title="Task Tracker"
-                    tags={["React", "Frontend"]}
-                    description="A simple frontend project where you can add, complete and delete tasks."
-                    href="https://simple-task-tracker-pi.vercel.app/"/>
-                <ProjectCard 
-                    imageSrc={gitProject}
-                    title="Git From Scratch"
-                    tags={["Git", "JavaScript"]}
-                    description="A side project where I build a smaller version of Git from scratch."
-                    href="https://github.com/LogesDon/build-my-own-git"/>
+                {projects && projects.length > 0 && (
+                    projects.map((project) => (
+                        <ProjectCard key={project.slug} {...project} />
+                    ))
+                )}
             </div>
         </div>
     );
