@@ -9,7 +9,7 @@ import type { NavItem } from '../lib/data';
 
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Blog', href: '/bloggy'} // will change to /blog once I get blog page up and running
+  { label: 'Blog', href: '/blog'}
 ];
 
 export default function Navbar(): React.JSX.Element {
@@ -33,23 +33,33 @@ export default function Navbar(): React.JSX.Element {
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href;
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`font-medium transition duration-150 ${
-                    isActive 
-                      ? 'text-blue-600 border-b-2 border-blue-600 pb-1' 
-                      : 'text-gray-700 hover:text-blue-600'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
+          <div className="hidden md:flex items-center space-x-8">
+            <div className="flex space-x-8">
+              {navItems.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`font-medium transition duration-150 ${
+                      isActive 
+                        ? 'text-blue-600 border-b-2 border-blue-600 pb-1' 
+                        : 'text-gray-700 hover:text-blue-600'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+            </div>
+
+            {/* Email Action Button */}
+            <a
+              href="mailto:logan.donnelly129@gmail.com"
+              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition duration-150 shadow-sm"
+            >
+              Get in Touch
+            </a>
           </div>
 
           {/* Mobile Menu Button (Hamburger) */}

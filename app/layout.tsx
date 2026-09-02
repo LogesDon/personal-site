@@ -1,6 +1,7 @@
 // app/layout.tsx
 import NavBar from "./ui/navBar";
 import "./globals.css";
+import Footer from "./ui/footer";
 
 export default function RootLayout({
   children,
@@ -12,6 +13,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
