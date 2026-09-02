@@ -12,11 +12,11 @@ export default function BioCard() {
     </h1>
     
     <p className={`${lusitana.className} text-lg text-gray-600 md:text-xl md:leading-relaxed`}>
-      Hi, I’m Logan. I study Mathematics and Computer Science at UNSW, with a deep interest in applied mathematics and full-stack web engineering.
+      Hi, I&apos;m Logan. I study Mathematics and Computer Science at UNSW, with a deep interest in applied mathematics and full-stack web engineering.
     </p>
     
     <p className={`${lusitana.className} text-lg text-gray-600 md:text-xl md:leading-relaxed`}>
-      To me, full-stack development is the ultimate toolkit because it lets me build complete ideas without limitations. This portfolio is my personal corner of the internet—a clean space to document the software, developer tools, and digital experiments I build simply because they're fun to create.
+      To me, full-stack development is the ultimate toolkit because it lets me build complete ideas without limitations. This portfolio is my personal corner of the internet—a clean space to document the software, developer tools, and digital experiments I build simply because they&apos;re fun to create.
     </p>
     
   </div>
