@@ -15,3 +15,12 @@ export interface ProjectCardProps {
   description: string, 
   href: string  //link to destination path
 }
+
+export type Post = {
+  slug: string; 
+  title: string; 
+  summary: string; 
+  content: string; 
+  category: string;
+  date: string;
+}
