@@ -11,7 +11,17 @@ export interface NavItem {
 export interface ProjectCardProps {
   imageSrc: StaticImageData, 
   title: string, 
+  slug: string,
   tags: string[], 
   description: string, 
   href: string  //link to destination path
+}
+
+export type Post = {
+  slug: string; 
+  title: string; 
+  summary: string; 
+  content: string; 
+  category: string;
+  date: string;
 }
