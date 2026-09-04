@@ -8,7 +8,7 @@ export default function BioCard() {
   <div className="flex flex-col gap-12 w-full">
     
     <h1 className={`${lusitana.className} text-3xl text-gray-900 md:text-5xl font-bold tracking-tight md:leading-[1.1]`}>
-      Student, Aspiring Founder, Amateur Vibe-Coder.
+      Student, Lakers Fan, Amateur Vibe-Coder.
     </h1>
     
     <p className={`${lusitana.className} text-lg text-gray-600 md:text-xl md:leading-relaxed`}>
