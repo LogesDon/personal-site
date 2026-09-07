@@ -8,7 +8,7 @@ export default function BioCard() {
   <div className="flex flex-col gap-12 w-full">
     
     <h1 className={`${lusitana.className} text-3xl text-gray-900 md:text-5xl font-bold tracking-tight md:leading-[1.1]`}>
-      Turning complex logic into clean, functional full-stack applications.
+      Student, Lakers Fan, Amateur Vibe-Coder.
     </h1>
     
     <p className={`${lusitana.className} text-lg text-gray-600 md:text-xl md:leading-relaxed`}>
@@ -16,7 +16,7 @@ export default function BioCard() {
     </p>
     
     <p className={`${lusitana.className} text-lg text-gray-600 md:text-xl md:leading-relaxed`}>
-      To me, full-stack development is the ultimate toolkit because it lets me build complete ideas without limitations. This portfolio is my personal corner of the internet—a clean space to document the software, developer tools, and digital experiments I build simply because they&apos;re fun to create.
+      To me, full-stack development is the ultimate toolkit because it lets me build and appreciate the apps everyone uses on a day-to-day basis. This portfolio is my little corner of the internet—somewhere to document the stuff I build and share it with you! 
     </p>
     
   </div>

@@ -1,11 +1,7 @@
-import { Post } from "./data";
+# Can I Actually Code? 
 
-export const posts: Post[] = [
-    {
-        slug: "article-1",
-        title: "Can I Actually Code?",
-        summary: "Tutorials, Coding, and The Blank Repo Problem",
-        content: `
+## Tutorials, Coding, and The Blank Repo Problem
+
 ## My Backstory 
 
 As I wrapped up my summer internship and headed into my first term this year, I decided it was finally time to get cracking on some actual side projects instead of following my usual rhythm of getting lost in an endless stream of Lakers highlights. 
@@ -40,24 +36,4 @@ Despite this, I have hope that if I genuinely commit to doing more and more litt
 
 The main takeaway here is that tutorials are great, but if you want to see how well you can actually build anything, try staring at a blank repo and see what you can come up with. As someone who has only just started to build without these coding agents again, I can tell you it will probably be scary. However, it will also get you one step closer to being someone who can actually code up cool stuff. So in my humble opinion, it’ll be worth it in the end. Happy Coding\!
 
-## `,
-        category: "Personal Writing", 
-        date: "2026-09-01"
-    },
-    // {
-    //     slug: "article-2",
-    //     title: "Article 2",
-    //     summary: "This is the second article",
-    //     content: "Full post content goes here",
-    //     category: "Personal Writing", 
-    //     date: "2026-09-01"
-    // },
-    // {
-    //     slug: "article-3",
-    //     title: "Article 3",
-    //     summary: "This is the third article",
-    //     content: "Full post content goes here",
-    //     category: "Personal Writing", 
-    //     date: "2026-09-01"
-    // },
-]
+## 

@@ -8,7 +8,7 @@ export default function Blog() {
             <div className="mb-16">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">Blog</h1>
                 <p className="text-lg text-gray-600 max-w-2xl">
-                    Thoughts on stuff.
+                    Thoughts On Life and Coding, Amongst Other Things.
                 </p>
             </div>
 
