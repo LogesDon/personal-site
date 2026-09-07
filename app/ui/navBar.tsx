@@ -7,9 +7,15 @@ import type { NavItem } from '../lib/data';
 
 
 
-const navItems: NavItem[] = [
+const dropdownItems: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Blog', href: '/blog'}
+  { label: 'Blog', href: '/blog'}, 
+  { label: 'Contact Me', href: "mailto:logan.donnelly129@gmail.com"},
+];
+
+const desktopItems: NavItem[] = [
+  { label: 'Home', href: '/' },
+  { label: 'Blog', href: '/blog'}, 
 ];
 
 export default function Navbar(): React.JSX.Element {
@@ -35,7 +41,7 @@ export default function Navbar(): React.JSX.Element {
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex space-x-8">
-              {navItems.map((item) => {
+              {desktopItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
                   <Link
@@ -78,6 +84,7 @@ export default function Navbar(): React.JSX.Element {
                 )}
               </svg>
             </button>
+             
           </div>
 
         </div>
@@ -86,7 +93,7 @@ export default function Navbar(): React.JSX.Element {
       {/* Mobile Dropdown Menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-white border-t border-gray-100`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {navItems.map((item) => {
+          {dropdownItems.map((item) => {
             const isActive = pathname === item.href;
             return (
               <Link
@@ -103,6 +110,7 @@ export default function Navbar(): React.JSX.Element {
               </Link>
             );
           })}
+
         </div>
       </div>
     </nav>
